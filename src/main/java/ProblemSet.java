@@ -26,30 +26,30 @@ public class ProblemSet {
 	for(int i = 1; i <= round; i++){
 	System.out.print("\nCurrent rounds: " + i);
 
-	System.out.println("Please select a Category: ");
+	System.out.println("\nPlease select a Category: "); // Menu
 	System.out.println("1.High (11 to 20)");
 	System.out.println("2.Low (1 to 9)");
 	System.out.println("3.Even (10)");
 
 
-	int catChosen = input.nextInt();
+	int catChosen = input.nextInt(); // variable getting input for the categories
 
-	int num = (int)(Math.random()*20) + 1;
+	int num = (int)(Math.random()*20) + 1; // number generator
 	String correct = "The number was " + num + "," + "You are correct.";
 	String incorrect = "The number was " + num + "," + "You are incorrect";
 	int option;
 
-	if (num >= 11){
+	if (num >= 11){ //checks if the randomly generated number is above 11/high
 		option = 1;
 	}
-	else if (num <= 9){
+	else if (num <= 9){ // checks if the randomly generated number is less than 9/low
 		option = 2;
 	}
 	else {
-		option = 3;
+		option = 3; // number that randomly generated was 10/Even
 	}
 
-	if (catChosen == option){
+	if (catChosen == option){ //i
 		System.out.println(correct);
 		score++;
 	}
@@ -64,7 +64,7 @@ public class ProblemSet {
 	System.out.println("\nTotal Score " + score);
 
 	if (score >0 && score == round){
-		System.out.println("Congratulations you won " + score + "out of " + round + " rounds right");
+		System.out.println("Congratulations you won " + score + " out of " + round + " rounds right");
 	}
 
 	else {
