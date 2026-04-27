@@ -49,7 +49,7 @@ public class ProblemSet {
 		option = 3; // number that randomly generated was 10/Even
 	}
 
-	if (catChosen == option){ //i
+	if (catChosen == option){ // if any of the checks are matching with the input of the user, the counter/score will go up
 		System.out.println(correct);
 		score++;
 	}
@@ -57,11 +57,11 @@ public class ProblemSet {
 		System.out.println(incorrect);
 	}
 
-	System.out.println("Current score: " + score);
+	System.out.println("Current score: " + score); //prints current score
 	}
 
 
-	System.out.println("\nTotal Score " + score);
+	System.out.println("\nTotal Score " + score); //prints total score
 
 	if (score >0 && score == round){
 		System.out.println("Congratulations you won " + score + " out of " + round + " rounds right");
